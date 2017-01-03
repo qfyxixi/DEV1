@@ -1,8 +1,5 @@
 ## Test Framework ##
 [EXAMPLE](https://github.com/qfyxixi/qFyblog/tree/gh-pages/TestFramework)
-### functional test case ###
-1. keyword
-2. test.txt
 
 ### sendMail ###
 1. mail.txt
@@ -11,6 +8,11 @@
 
 ### util ###
 Analysis result
+
+### functional test case ###
+1. keyword
+2. test.txt
+
 
 
 *To be added... ...*
