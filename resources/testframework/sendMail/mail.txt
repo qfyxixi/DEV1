@@ -1,0 +1,12 @@
+*** Settings ***
+Library           Selenium2Library
+Library           HttpLibrary.HTTP
+Library           sendMail.py
+Library           zuanyi.py
+
+*** Test Cases ***
+s1
+    zuanyi
+    sendMail
+
+
