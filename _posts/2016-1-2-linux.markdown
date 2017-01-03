@@ -1,0 +1,70 @@
+## linux ##
+
+### See the use of hard disk  ###
+1)displayed in KB  
+```df -k```  
+
+2)displayed in MB,only show size  
+```du -s www ```  
+
+3)displayed in MB,show sub-directory size  
+```du -h www```
+
+### View the resource used by java ###
+1)see the process contains java  
+```ps -ef | grep JAVA```  
+refrence :[*linux ps command*](http://blog.chinaunix.net/uid-25681671-id-3201927.html)  
+
+2)view the process  
+```top -H```
+
+### Find the possibility of high load  ###
+1）see high CPU usage by processes  
+```ps ux```
+
+2)see usage of threads which belong to java process    
+
+---
+	ps -Lp
+	jstack 15047
+
+---
+
+### replace  ###
+repalce from line 1 to the end  
+```1,$s/abc/xyz/g```
+
+###find the biggest usage file ###
+```du -sh * ```
+
+### file system ###
+├──  **/**         root directory  
+├── **bin**     store the user binary files  
+├── **boot**    store the kernel boot configuration file  
+├── **dev**     store the device file：devtmpfs  
+├── **etc**     store the system configuration file  
+├── **home**    user home directory  
+├── **lib**     Dynamic shared library  
+├── **lost+found** 	recovery file   
+├── **media**   Removable storage medium mountpoints  
+├── **mnt**     the temporary file system mount point  
+├── **opt**     Additional application package  
+├── **proc**    System memory mapping directory to provide the kernel and process information  
+├── **root**    root User home directory：ext4  
+├── **sbin**    store  binary files  
+├── **srv**     Storage service related data  
+├── **sys**     sys The virtual file system mount point   
+├── **tmp**     store temporary file  
+├── **usr**     store user application program  
+└── **var**     store file :Mail, system log, etc  
+
+
+### Free port ###
+1)Check the port  
+```netstat -apn | grep port```  
+
+2)query process  
+```ps -ef | grep PID```  
+
+3)kill process  
+```kill -9 PID```  
